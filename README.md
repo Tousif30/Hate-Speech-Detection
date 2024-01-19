@@ -1,1 +1,7 @@
 # Hate-Speech-Detection
+## Overview
+This project involves the classification of hate speech and offensive language used by Twitter users on their tweets. In addition, correlation analysis was conducted to see if their was a relationship between number hate speech words and number offensive language words used in a sentence. Furthermore, co-occurrence analysis was conducted to find the top 10 most appeared words from the dataset. The data for this project is sourced from [Kaggle](https://www.kaggle.com/datasets/thedevastator/hate-speech-and-offensive-language-detection)
+## Methodology
+Firstly the texts were cleaned by the utilization of the regular expression library and the texts were processed via the NLTK library. Moving on three machine learning models were created: Support Vector Classifier, Multinomial Naive Bayes classifier and K-Nearest Neighbors classifier. Then hyperparameter tuning was conducted to determined the best parameters to improve the accuracy of the models.
+## Conclusion
+Overall, the tuned Support Vector Classifier produced the highest accuracy 0.901. Hate speech was able to be detected extremely precisely with a precision score of 0.927 however the compared to the other 2 labels hate speech had the smallest amount of test data. Moreover offensive langauge was accurately classified with a precision score of 0.823. The correlation analysis conducted showed there was a weak relationship with hate speech and offensive language with a Pearson's r coefficient being -0.262 and the p-value being 0.00.
